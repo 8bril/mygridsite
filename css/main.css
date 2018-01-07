@@ -63,19 +63,20 @@ button:hover {
     grid-column: 1 / 13; /*Indicaremos desde que columna inicia y hasta cuál termina el primer section*/
     background-color: #efefef;
     padding: 30px;
-    
+    display: flex;
     }
 
 
  #first-image {
     grid-column: 1 / 12;
+
  }   
 
-
-.float-left {
-    float: left;
-
+.image-1 {
+    height: 57vh;
+    width: 100vw;
 }
+
 
 .text-logo {
     font-size: 20px;
@@ -86,9 +87,10 @@ button:hover {
    
 }
 
-.float-right {
-    float: right;
-}
+.menu-list-container {
+    margin: 10px 16px 15px 540px;
+   }
+
 
 .menu-item:link, .menu-item:visited {
     text-decoration: none;
@@ -156,6 +158,22 @@ footer {
     /* Sección responsive */
 
 @media only screen and (max-width: 768px){
+
+    .menu-list-container {
+        margin: 10px 16px 15px 40px;
+        font-size: 12px;
+
+    }
+
+    .text-logo {
+        font-size: 12px;
+        border: 1px solid #444;
+        box-shadow: 5px 5px 5px grey;
+        padding: 5px;
+        font-family: Courier;
+   
+    }
+   
 
     #menu {
         grid-column: 1 / 12;
