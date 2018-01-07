@@ -14,7 +14,7 @@ main {
     display: grid;
     grid-gap: 0px;
     grid-template-columns: repeat(11, 1fr); 
-    grid-template-rows: 100px 400px; 
+    grid-template-rows: 100px; 
 }
 
 p {
@@ -52,11 +52,6 @@ button:hover {
     color: white;
 }
 
-img {
-    height: auto;
-    max-width: 100%;
-}
-
 
 #btn-2 {
     margin-left: 10px;
@@ -64,25 +59,18 @@ img {
 
 }
 
-
-/* 
-
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-*/
-
-
 #menu {
-        grid-column: 1 / 13; /*Indicaremos desde que columna inicia y hasta cuál termina el primer section*/
-        background-color: #efefef;
-        padding: 30px;
-
-        
+    grid-column: 1 / 13; /*Indicaremos desde que columna inicia y hasta cuál termina el primer section*/
+    background-color: #efefef;
+    padding: 30px;
+    
     }
+
+
+ #first-image {
+    grid-column: 1 / 12;
+ }   
+
 
 .float-left {
     float: left;
@@ -109,18 +97,6 @@ section {
 
 .menu-item:hover {
     color: #666666;
-}
-
-
-
-#first-image {
-    background-image: url("https://dummyimage.com/1295x400");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    grid-column: 1 / 12;
-    height: 100vh;
-    max-width: 100%;
 }
 
 
@@ -156,6 +132,11 @@ section {
     margin: 23px;
 }
 
+.card-photo {
+    height: 28vh;
+    width: 100vw;
+
+}
 
 footer {
     grid-column: 1 / 12;
@@ -183,6 +164,7 @@ footer {
 
     #first-image {
         grid-column: 1 / 12;
+
         
     }
 
