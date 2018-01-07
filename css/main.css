@@ -135,7 +135,7 @@ button:hover {
 }
 
 .card-photo {
-    height: 28vh;
+    height: 30vh;
     width: 100vw;
 
 }
@@ -186,6 +186,11 @@ footer {
         
     }
 
+    .image-1 {
+        height: 45vh;
+        width: 100vw;
+    }
+
     .about {
         grid-column: 1 / 12;
         
@@ -208,6 +213,11 @@ footer {
 
     #card-3 {
         grid-column: 1 / 12;
+    }
+
+    .card-photo {
+        height: 40vh;
+        width: 100vw;
     }
 
 
