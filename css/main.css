@@ -118,9 +118,8 @@ section {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    grid-column: 1 / 13;
-    grid-row: 2 / 2;
-    height: auto;
+    grid-column: 1 / 12;
+    height: 100vh;
     max-width: 100%;
 }
 
