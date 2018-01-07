@@ -125,6 +125,7 @@ a:hover {
     grid-column: 1 / 8;
     padding: 80px;
 
+
 }
 
 .contact {
@@ -178,11 +179,11 @@ footer {
 
 @media only screen and (max-width: 768px){
 
-    h1 {
-        font-size: 25px;
+    span {
+        font-size: 10px;
         border: 1px solid #444;
         box-shadow: 5px 5px 5px grey;
-        margin: 25px;
+        margin: 30px;
         font-family: Courier;
         float: left;
         padding: 10px;
@@ -219,7 +220,7 @@ footer {
         height: 100vh;
         background-color: rgba(2,2,1,0.8);
         transition: all 0.5s;
-        transform: translateX(-100%);
+        transform: translateX(-130%);
     }
 
     .menu a {
