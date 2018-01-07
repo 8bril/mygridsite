@@ -30,6 +30,17 @@ h3 {
     padding-left: 20px;
 }
 
+span {
+        font-size: 25px;
+        border: 1px solid #444;
+        box-shadow: 5px 5px 5px grey;
+        margin: 25px;
+        font-family: Courier;
+        float: left;
+        padding: 10px;
+   
+    }
+
 button {
     background-color: white;
     color: black;
@@ -48,8 +59,8 @@ button {
 
 
 button:hover {
-    background-color: #555555;
-    color: white;
+    background-color: #fffa00;
+    color: #444;
 }
 
 
@@ -59,12 +70,39 @@ button:hover {
 
 }
 
-#menu {
-    grid-column: 1 / 13; /*Indicaremos desde que columna inicia y hasta cuál termina el primer section*/
-    background-color: #efefef;
-    padding: 30px;
+/* MENU */
+
+header {
+    grid-column: 1 / 12;
+    background-color: #eee;
+}
+
+.menu {
+    margin-top: 30px;
+    margin-right: 80px;
+    width: auto;
+    height: auto;
+    transform: translateX(0%);
+    float: right;
     display: flex;
-    }
+}
+
+header input {
+    display: none;
+}
+
+.fa {
+    color: #eee;
+}
+
+.menu a {
+    margin: 10px;
+    text-decoration: none;
+}
+
+.menu-item:link {
+    margin-left: 30px;
+}
 
 
  #first-image {
@@ -78,26 +116,7 @@ button:hover {
 }
 
 
-.text-logo {
-    font-size: 20px;
-    border: 1px solid #444;
-    box-shadow: 5px 5px 5px grey;
-    padding: 10px;
-    font-family: Courier;
-   
-}
-
-.menu-list-container {
-    margin: 10px 16px 15px 540px;
-   }
-
-
-.menu-item:link, .menu-item:visited {
-    text-decoration: none;
-    margin-left: 30px;
-}
-
-.menu-item:hover {
+a:hover {
     color: #666666;
 }
 
@@ -159,26 +178,77 @@ footer {
 
 @media only screen and (max-width: 768px){
 
-    .menu-list-container {
-        margin: 10px 16px 15px 40px;
-        font-size: 12px;
-
-    }
-
-    .text-logo {
-        font-size: 12px;
+    h1 {
+        font-size: 25px;
         border: 1px solid #444;
         box-shadow: 5px 5px 5px grey;
-        padding: 5px;
+        margin: 25px;
         font-family: Courier;
+        float: left;
+        padding: 10px;
    
     }
-   
+       
 
-    #menu {
+    header {
         grid-column: 1 / 12;
-        
+        box-sizing: border-box;
+        background: #efefef;
+
     }
+
+    .contenedor {
+        width: 90%;
+        margin: auto;
+    }
+
+    #menu-bar {
+        display: none;
+    }
+
+    header label {
+        float: right;
+        margin: 25px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(2,2,1,0.8);
+        transition: all 0.5s;
+        transform: translateX(-100%);
+    }
+
+    .menu a {
+        display: block;
+        color: #fff;
+        height: 50px;
+        text-decoration: none;
+        padding: 20px;
+        border-bottom: 1px solid #444;
+
+    }
+
+    .menu a:hover {
+        background-color: #444;
+    }
+
+    header .contenedor {
+        display: table;
+
+    }
+
+    #menu-bar:checked ~ .menu {
+        transform: translateX(0%);
+    }
+
+    .fa {
+        color: #777;
+    }
+   
 
     #first-image {
         grid-column: 1 / 12;
